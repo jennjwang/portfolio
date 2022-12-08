@@ -1,0 +1,29 @@
+.divider {
+    border-top: 5px solid black;
+    width: 80%;
+    margin-top: -55px;
+  }
+
+  .img{
+    margin-bottom: -52px;
+    width: auto;
+    height: 300px;
+  }
+
+  .margin{
+    margin: 0 auto;
+  }
+
+  .text{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 4rem;
+    line-height: 1.15;
+    font-size: 1.5rem;
+  }
+
+  .descript {
+    width: 500px;
+  }

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Personas & Storyboarding",
+        "description":"Step into a user’s shoes. Individually, you will observe real users interacting with an interface, interview these individuals about their experiences, create personas based on these users, and illustrate a storyboard for one of your personas."
+    },
+    {
+        "title": "Responsive Redesign",
+        "description": "The goal of this assignment is for you to practice the workflow of redesigning a simple website. You should take away the skills necessary to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes for various screen sizes, and build a responsive website based on those prototypes."
+        
+    },
+    {
+        "title": "A/B Testing and Eye Tracking",
+        "description": "The goal of this assignment is to understand the value of quantitative and qualitative user tests for evaluating different UI designs. You will collect and analyze user behavior through quantitative data in A/B Testing and qualitative data in Eye Tracking."
+        
+    },
+    {
+        "title": "Iterative Design",
+        "description": "This assignment is split into four parts to exemplify an iterative design process flow: (1) sketching ideas of the interface, (2) creating an interactive, high-fidelity prototype, (3) conducting user testing on a final, revised prototype, and (4) contacting the start up. "
+        
+    },
+    {
+        "title": "Development",
+        "description": "This is your chance to develop an interactive interface, use interface components, and tie the components to an internal data state. Get even more comfortable with React by creating a list-based interface! Basically, an interface for users to select items out of a list, which then aggregates them."
+        
+    }
+]

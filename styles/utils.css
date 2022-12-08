@@ -1,0 +1,28 @@
+.Per:hover{
+  background-color: #e09d31;
+  color: white !important
+}
+
+.Dev:hover{
+    background-color: #5CAD4D;
+    color: white !important
+}
+
+.Ite:hover{
+    background-color: #EEF1FF;
+}
+
+.Res:hover{
+    background-color: #2595be;
+    color: white !important
+}
+
+.Ite:hover{
+    background-color: #D47237;
+    color: white !important
+}
+
+.AB:hover{
+    background-color: #7057D9;
+    color: white !important;
+}
