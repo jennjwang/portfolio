@@ -10,6 +10,12 @@
     height: 300px;
   }
 
+  @media (prefers-color-scheme: dark) {
+    .img{
+      filter: invert(100%);
+    }
+  }
+
   .margin{
     margin: 0 auto;
   }

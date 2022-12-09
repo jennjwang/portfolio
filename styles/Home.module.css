@@ -88,13 +88,18 @@
 .card:hover,
 .card:focus,
 .card:active {
-  /* color: #0070f3; */
+  background-color: #fbe259;
   border-color: black;
 }
 
 @media (prefers-color-scheme: dark) {
   .card {
     border: 1px solid white !important;
+  }
+  .card:hover,
+  .card:focus,
+  .card:active {
+    background-color: #141cbc;
   }
 }
 

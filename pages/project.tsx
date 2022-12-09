@@ -7,6 +7,7 @@ import projects from "../public/assets/projects.json";
 
 const lo = Londrina_Outline({ weight: "400", subsets: ["latin"] });
 const ws = Work_Sans({ weight: "400", subsets: ["latin"] });
+
 export default function Projects() {
   return (
     <div
@@ -20,6 +21,7 @@ export default function Projects() {
           return (
             <Card
               key={index}
+              url={item.href}
               title={item.title}
               description={item.description}
             />

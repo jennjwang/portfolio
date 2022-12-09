@@ -1,12 +1,23 @@
 import Image from "next/image";
 import sub from "../public/sub.png";
+import image from "../public/image.png";
 import styles from "../styles/Intro.module.css";
 import { Londrina_Outline, Work_Sans } from "@next/font/google";
+import { useEffect } from "react";
 
 const lo = Londrina_Outline({ weight: "400", subsets: ["latin"] });
 const ws = Work_Sans({ weight: "400", subsets: ["latin"] });
 
 export default function Intro() {
+  // useEffect(() => {
+  //   if (
+  //     window.matchMedia &&
+  //     window.matchMedia("(prefers-color-scheme:dark)").matches
+  //   ) {
+  //     selected = image;
+  //   }
+  // });
+
   return (
     <div className="flex justify-center">
       <div className="flex p-10 pt-10">
@@ -20,9 +31,9 @@ export default function Intro() {
             Nice to meet ya!
           </span>
           <p className={ws.className + " " + styles.descript}>
-            I’m [NAME], a student that's really into creating authentic and
-            lovable things that folks enjoy using every day. Right now, I'm
-            building things at [PLACE]. FYI That's not me on the left.
+            I am [NAME], a student that is really into creating authentic and
+            lovable things that folks enjoy using every day. Right now, I am
+            building things at [PLACE]. FYI Those are not me on the left.
           </p>
         </div>
       </div>

@@ -9,41 +9,42 @@ export default function NavBar() {
     <div className="flex p-10 justify-center text-center">
       <ul className="flex py-10 px-40">
         <li className="mr-6 text-xs">
-          <a className="" href="#">
-            HOME
-          </a>
+          {/* <a className="" href="#"> */}
+          HOME
+          {/* </a> */}
         </li>
         <li className="mr-6 text-xs">
-          <a className="" href="#">
-            ABOUT
-          </a>
+          {/* <a className="" href="#"> */}
+          ABOUT
+          {/* </a> */}
         </li>
         <li className="mr-6 text-xs">
-          <a className="text-xs" href="#">
-            CONTACT
-          </a>
+          {/* <a className="text-xs" href="#"> */}
+          CONTACT
+          {/* </a> */}
         </li>
       </ul>
-      <a href="/">
+      <Link className={ws.className} href="/personas/personas">
         <h1 className={lo.className + " text-center text-8xl font-bold"}>
           ANNONYMOUS
         </h1>
-      </a>
+      </Link>
+
       <ul className="flex py-10 px-40">
         <li className="mr-6 text-xs">
-          <a className="" href="#">
-            SCHOOL
-          </a>
+          {/* <a className="" href="#"> */}
+          SCHOOL
+          {/* </a> */}
         </li>
         <li className="mr-6 text-xs">
-          <a className="" href="#">
-            WORK
-          </a>
+          {/* <a className="" href="#"> */}
+          WORK
+          {/* </a> */}
         </li>
         <li className="mr-6 text-xs">
-          <a className="text-xs" href="#">
-            FUN
-          </a>
+          {/* <a className="text-xs" href="#"> */}
+          FUN
+          {/* </a> */}
         </li>
       </ul>
     </div>
