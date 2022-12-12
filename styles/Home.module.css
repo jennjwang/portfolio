@@ -83,6 +83,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 500px;
+  height: fit-content;
 }
 
 .card:hover,
@@ -101,6 +102,10 @@
   .card:active {
     background-color: #141cbc;
   }
+}
+
+.trans{
+  mix-blend-mode: multiply;
 }
 
 .card h2 {

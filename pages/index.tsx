@@ -12,7 +12,7 @@ export default function Home() {
         <title>Portfolio</title>
         <meta name="description" content="UIUX CS1300 final portfolio" />
       </Head>
-      <NavBar></NavBar>
+      <NavBar title="ANONYMOUS"></NavBar>
       <Intro></Intro>
       <Projects></Projects>
 

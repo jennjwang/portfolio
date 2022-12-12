@@ -7,7 +7,9 @@
   .img{
     margin-bottom: -52px;
     width: auto;
-    height: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -18,18 +20,19 @@
 
   .margin{
     margin: 0 auto;
+    width: 80rem;
   }
 
   .text{
-    width: 500px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     text-align: start;
     margin-left: 4rem;
-    line-height: 1.15;
+    line-height: 2.2rem;
     font-size: 1.5rem;
   }
 
   .descript {
-    width: 500px;
+    width: 800px;
   }
