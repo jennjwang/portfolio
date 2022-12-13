@@ -19,7 +19,8 @@ export default function Developing() {
           Full scoop coming soon...
         </p>
         <p>
-          I'm still working on adding this page. It'll be worth it, I promise.
+          I&apos;m still working on adding this page. It&apos;ll be worth it, I
+          promise.
         </p>
       </div>
     </div>
