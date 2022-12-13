@@ -8,8 +8,8 @@ const ws = Work_Sans({ weight: "400", subsets: ["latin"] });
 
 export default function Intro() {
   return (
-    <div className="flex justify-center">
-      <div className="flex p-5">
+    <div className={styles.margin + " flex justify-center"}>
+      <div className="flex py-5">
         <Image className={styles.img} src={sub} alt="user profile picture" />
         <div className={styles.text}>
           <span
