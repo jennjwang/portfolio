@@ -1,28 +1,28 @@
 [
     {
-        "title": "Personas & Storyboarding",
+        "title": "Parking Meter Personas",
         "href": "/personas/personas",
-        "image": "personas/sam.png",
-        "description":"How might we better emphasize with users at parking meters?"
+        "image": "/personas/sam.png",
+        "description":"How might we better understand the user experence at parking meters?"
     },
     {
-        "title": "Redesigning the National Weather Services",
+        "title": "National Weather Services (NWS) Redeisgn",
         "href": "/redesign/redesign",
-        "image": "personas/sketch1.jpeg",
-        "description": "Our interactions with government websites are often memorable for all the wrong reasons. "
+        "image": "redesign/ipad_lo.png",
+        "description": "How might we improve the usability of the NWS website? "
         
     },
     {
-        "title": "Iterative Design",
+        "title": "LunaJoy",
         "href": "/iterative/iterative",
-        "image": "personas/sketch1.jpeg",
-        "description": "This assignment is split into four parts to exemplify an iterative design process flow: (1) sketching ideas of the interface, (2) creating an interactive, high-fidelity prototype, (3) conducting user testing on a final, revised prototype, and (4) contacting the start up. "
+        "image": "luna.png",
+        "description": "How might we design an app to provide better mental health care for women? "
         
     },
     {
-        "title": "Deepfake Detection",
-        "href": "https://crazykangaroo001.github.io/development/",
-        "image": "personas/sketch1.jpeg",
-        "description": "This is your chance to develop an interactive interface, use interface components, and tie the components to an internal data state. Get even more comfortable with React by creating a list-based interface! Basically, an interface for users to select items out of a list, which then aggregates them."
+        "title": "Deepfake Facial Detection",
+        "href": "/detection/detection",
+        "image": "deep.png",
+        "description": "How might we more accurately detect deepfakes in human videos?"
     }
 ]

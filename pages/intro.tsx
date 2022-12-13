@@ -9,7 +9,7 @@ const ws = Work_Sans({ weight: "400", subsets: ["latin"] });
 export default function Intro() {
   return (
     <div className="flex justify-center">
-      <div className="flex p-10 pt-10">
+      <div className="flex p-5">
         <Image className={styles.img} src={sub} alt="user profile picture" />
         <div className={styles.text}>
           <span
@@ -18,12 +18,11 @@ export default function Intro() {
             Nice to meet ya!
           </span>
           <p className={ws.className + " " + styles.descript}>
-            I'm [NAME], a student that's
-            <i> really </i>
-            into creating authentic and lovable things that folks enjoy using
-            each and every day. I'm passionate about leveraging technology to
-            responsibly for social impact and creating helpful, accessible
-            experiences for everyone. Right now, I'm building things at [PLACE].
+            I&apos;m [NAME], a student that&apos;s really into creating
+            authentic and lovable things that folks enjoy using each day.
+            I&apos;m passionate about leveraging technology responsibly for
+            social impact and creating helpful, accessible experiences for
+            everyone. Right now, I&apos;m building things at [PLACE].
           </p>
         </div>
       </div>

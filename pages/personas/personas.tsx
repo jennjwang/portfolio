@@ -19,6 +19,8 @@ import sketch3 from "../../public/personas/sketch3.jpeg";
 import sketch4 from "../../public/personas/sketch4.jpeg";
 import sketch5 from "../../public/personas/sketch5.png";
 import sketch6 from "../../public/personas/sketch6.jpeg";
+import { HomeIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const lo = Londrina_Outline({ weight: "400", subsets: ["latin"] });
 
@@ -26,15 +28,20 @@ export default function personas() {
   return (
     <div>
       <div className="flex p-10 justify-center text-center">
-        <ul className="flex py-10 px-20">
+        <ul className="flex py-10 px-10">
           <li className="mr-6">
-            <a href="/">HOME</a>
+            <Link href="/">
+              <HomeIcon className="h-6 w-6 mx-2" />
+            </Link>
           </li>
           <li className="mr-6">
-            <a href="#interface">INTERFACE</a>
+            <Link href="#interface">INTERFACE</Link>
           </li>
           <li className="mr-6">
-            <a href="#motivation">MOTIVATION</a>
+            <Link href="#motivation">MOTIVATION</Link>
+          </li>
+          <li className="mr-6">
+            <Link href="#interviews">INTERVIEWS</Link>
           </li>
         </ul>
         <h1 className={lo.className + " text-center text-8xl font-bold"}>
@@ -42,19 +49,26 @@ export default function personas() {
         </h1>
         <ul className="flex py-10 px-20">
           <li className="mr-6">
-            <a href="#interviews">INTERVIEWS</a>
+            <Link href="#personas">EMPATHY MAPS</Link>
           </li>
           <li className="mr-6">
-            <a href="#personas">EMPATHY MAPS</a>
-          </li>
-          <li className="mr-6">
-            <a href="#storyboard">STORYBOARD</a>
+            <Link href="#storyboard">STORYBOARD</Link>
           </li>
         </ul>
       </div>
-      <Overview></Overview>
+      <Overview
+        tldr="To better understand the perspective of a parking meter user, I
+            observed and interviewed individuals about their experiences using
+            parking meters on South Main St. in Providence. Based on these
+            users, I created personas and illustrated a storyboard for one of
+            these personas."
+        highlights={[
+          "Constructed two personas by creating a four-quadrant empathy map, describing what they think, feel, say, and do based on three user interviews",
+          "Captured the persona’s user journey using a parking meter from start to end in a storyboard.",
+        ]}
+      ></Overview>
       <div className={styles.line + " py-5"}></div>
-      <div className={styles.bigContainer}>
+      <div className={styles.bigContainer} id="interface">
         <span className={lo.className + " text-center pb-8 text-6xl font-bold"}>
           The Parking Meter Interface
         </span>
@@ -68,41 +82,41 @@ export default function personas() {
           the meters through the buttons, they scroll through the six displays
           shown below.
         </p>
-        <div className="flex flex-row pt-10">
-          <Image className="pr-10" src={pm1} width="400" />
-          <div className="flex flex-row flex-wrap gap-5">
+        <div className="flex flex-row pt-10 justify-center">
+          <Image className="" src={pm1} width="380" alt="" />
+          <div className="flex flex-row gap-10 flex-wrap justify-end">
             <div className={styles.w20}>
-              <Image src={pm2} width="200" />
+              <Image src={pm2} width="200" alt={""} />
               <figcaption className="text-xs flex flex-wrap -mt-7 text-white px-2">
                 <p>Select time: 2:00 Cost: $2.50</p>
               </figcaption>
             </div>
             <div className={styles.w20}>
-              <Image src={pm3} width="200" />
+              <Image src={pm3} width="200" alt={""} />
               <figcaption className="text-xs flex flex-wrap -mt-7 text-white px-2">
                 <p>Card Payment Insert Card</p>
               </figcaption>
             </div>
             <div className={styles.w20}>
-              <Image src={pm4} width="200" />
+              <Image src={pm4} width="200" alt={""} />
               <figcaption className="text-xs flex flex-wrap -mt-10 text-white px-2">
                 <p>Welcom to Providence $1.25hr 2hr Max</p>
               </figcaption>
             </div>
             <div className={styles.w20}>
-              <Image src={pm5} width="200" />
+              <Image src={pm5} width="200" alt={""} />
               <figcaption className="text-xs flex flex-wrap -mt-10 text-white px-2">
                 <p>Enforced Mon to Sat 8:00am-6:00pm. No limit after 6pm</p>
               </figcaption>
             </div>
             <div className={styles.w20}>
-              <Image src={pm6} width="200" />
+              <Image src={pm6} width="200" alt={""} />
               <figcaption className="text-xs flex flex-wrap -mt-7 text-white px-2">
                 <p>Confirm; Cancel</p>
               </figcaption>
             </div>
             <div className={styles.w20}>
-              <Image src={pm7} width="200" />
+              <Image src={pm7} width="200" alt={""} />
               <figcaption className="text-xs flex flex-wrap -mt-10 text-white px-2">
                 <p>Maximum Time Duration: 03:58 Cost: $5.00</p>
               </figcaption>
@@ -338,7 +352,7 @@ export default function personas() {
             <span className="text-3xl font-bold pt-5">
               Persona 1 - Struggling Sam
             </span>
-            <Image src={sam} />
+            <Image src={sam} alt={""} />
             <div>
               Sam is a local resident parking for 45 minutes for a haircut
               appointment. <br></br>
@@ -379,7 +393,7 @@ export default function personas() {
             <span className="text-3xl font-bold pt-5">
               Persona 2 - Clueless Chole
             </span>
-            <Image src={jill} />
+            <Image src={jill} alt={""} />
             <div>
               Chloe is from out of state and she’s visiting Brown. It’s her
               first time parking in Providence.
@@ -430,13 +444,13 @@ export default function personas() {
         </span>
         <div className={styles.trans + " pt-5 grid grid-cols-3 gap-10"}>
           <div>
-            <Image src={sketch1} className="pb-5" />
+            <Image src={sketch1} className="pb-5" alt={""} />
             Sam walks up to the parking meter to pay for parking for 45 minutes.
             He presses the down arrow button to arrive at the time limit screen,
             as shown in the drawing.
           </div>
           <div>
-            <Image src={sketch2} className="pb-5" />
+            <Image src={sketch2} className="pb-5" alt={""} />
             He tries to press the down arrow button to reduce the time limit for
             parking but instead the screen switches to display asking him to
             insert card payment. He tries to scroll back to the previous screen,
@@ -444,19 +458,19 @@ export default function personas() {
             the next one again.
           </div>
           <div>
-            <Image src={sketch3} className="pb-5" />
+            <Image src={sketch3} className="pb-5" alt={""} />
             He plans, designs, and oversees the construction of buildings. To
             practice, architecture means to provide services in connection with
             the creation of buildings and the space within the site surrounding
             the buildings that have human occupancy or use as their purpose.
           </div>
           <div>
-            <Image src={sketch4} className="pb-5" />
+            <Image src={sketch4} className="pb-5" alt={""} />
             He then inserts and removes his card repeatedly and continues
             pressing the buttons until finally the screen changed.
           </div>
           <div>
-            <Image src={sketch5} />
+            <Image src={sketch5} alt={""} />
             <p className="-mt-10">
               The screens changed from displaying information regarding the
               maximum parking limit to the rate per hour to the enforced time
@@ -466,7 +480,7 @@ export default function personas() {
             </p>
           </div>
           <div>
-            <Image src={sketch6} className="pb-5" />
+            <Image src={sketch6} className="pb-5" alt={""} />
             Finally, he presses the green button to confirm his payment, and the
             green light bulb begins flashing.
           </div>

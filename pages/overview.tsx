@@ -14,13 +14,7 @@ export default function Overview(props: any) {
           >
             TLDR;
           </span>
-          <p>
-            To better understand the perspective of a parking meter user, I
-            observed and interviewed individuals about their experiences using
-            parking meters on South Main St. in Providence. Based on these
-            users, I created personas and illustrated a storyboard for one of
-            these personas.
-          </p>
+          <p>{props.tldr}</p>
         </div>
         <div className={styles.container + " flex flex-col px-10"}>
           <span
@@ -29,19 +23,15 @@ export default function Overview(props: any) {
             Highlights
           </span>
           <ul>
-            <li className={styles.bullets}>
-              <p className={styles.text + " text-base font-normal"}>
-                Constructed two personas by creating a four-quadrant empathy
-                map, describing what they think, feel, say, and do based on
-                three user interviews
-              </p>
-            </li>
-            <li className={styles.bullets}>
-              <p className={styles.text + " text-base font-normal"}>
-                Captured the persona’s user journey using a parking meter from
-                start to end in a storyboard.
-              </p>
-            </li>
+            {props.highlights?.map((item: string, index: number) => {
+              return (
+                <li className={styles.bullets} key={index}>
+                  <p className={styles.text + " text-base font-normal"}>
+                    {item}
+                  </p>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

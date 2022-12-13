@@ -16,9 +16,9 @@ export default function Card(props: {
   return (
     <div className={styles.card + " "}>
       <a className={ws.className} href={url}>
-        <h2 className="py-2">{props.title} &rarr;</h2>
+        <h2 className="py-2 text-2xl font-bold">{props.title} &rarr;</h2>
         <p>{props.description}</p>
-        <img className={" p-5"} src={props.image}></img>
+        <img className={" p-5 h-96 justify-center"} src={props.image}></img>
       </a>
     </div>
   );

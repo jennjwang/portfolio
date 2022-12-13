@@ -1,5 +1,6 @@
 import { Londrina_Outline, Work_Sans } from "@next/font/google";
 import Link from "next/link";
+import { HomeIcon } from "@heroicons/react/outline";
 
 const lo = Londrina_Outline({ weight: "400", subsets: ["latin"] });
 const ws = Work_Sans({ weight: "400", subsets: ["latin"] });
@@ -7,21 +8,21 @@ const ws = Work_Sans({ weight: "400", subsets: ["latin"] });
 export default function NavBar(props: any) {
   return (
     <div className="flex p-10 justify-center text-center">
-      <ul className="flex py-10 px-40">
+      <ul className="flex pt-10 px-20">
         <li className="mr-6">
-          <a className={ws.className} href="/">
-            HOME
-          </a>
+          <Link className={ws.className} href="/">
+            <HomeIcon className="h-6 w-6 mx-2" />
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={ws.className} href="#">
+          <Link className={ws.className} href="/developing">
             ABOUT
-          </a>
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={ws.className} href="#">
+          <Link className={ws.className} href="#contact">
             CONTACT
-          </a>
+          </Link>
         </li>
       </ul>
       {/* <Link className={ws.className} href="/"> */}
@@ -30,21 +31,21 @@ export default function NavBar(props: any) {
       </h1>
       {/* </Link> */}
 
-      <ul className="flex py-10 px-40">
+      <ul className="flex py-10 px-20">
         <li className="mr-6">
-          <a className={ws.className} href="#">
-            SCHOOL
-          </a>
+          <Link className={ws.className} href="#projects">
+            PROJECTS
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={ws.className} href="#">
-            WORK
-          </a>
+          <Link className={ws.className} href="/developing">
+            WRITING
+          </Link>
         </li>
         <li className="mr-6">
-          <a className={ws.className} href="#">
-            FUN
-          </a>
+          <Link className={ws.className} href="/developing">
+            RESUME
+          </Link>
         </li>
       </ul>
     </div>

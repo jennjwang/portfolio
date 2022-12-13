@@ -16,11 +16,14 @@ export default function Projects() {
   // });
 
   return (
-    <div className={styles.margin + " flex flex-col justify-center pt-10"}>
+    <div
+      id="projects"
+      className={styles.margin + " flex flex-col justify-center pt-10"}
+    >
       <p className={lo.className + " text-start py-10 text-6xl font-bold"}>
         Check These Out:
       </p>
-      <div className="grid grid-cols-3 gap-x-0">
+      <div className={" grid grid-cols-2 gap-x-0"}>
         {projects.map((item, index) => {
           return (
             <Card

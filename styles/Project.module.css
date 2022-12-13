@@ -24,6 +24,52 @@
     padding-bottom: 1.5rem;
 }
 
+.wf{
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem
+}
+
+.wf img{
+  width: 33%;
+  height: auto;
+  padding: 1.5rem 2rem
+}
+
+.iframe{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateZ(0px);
+  border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+.center{
+  margin: 0 auto;
+  align-items: center;
+}
+
+.video{
+  min-width: 35rem;
+}
+
+.firstImg{
+  width:26rem;
+  margin-top: 0.25rem;
+  margin-left: -3rem;
+}
+
+.inverted{
+  filter: invert(100%);
+}
+
+.screens img{
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .title{
   text-align: center;
   padding-bottom: 1.5rem;
@@ -47,7 +93,7 @@
 }
 
 .bigContainer{
-  width: 65rem;
+  width: 70rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -55,6 +101,115 @@
   padding-bottom: 2.5rem;
 }
 
+.frame{
+  height:40rem;
+}
+
+.wrapper{
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateZ(0px);
+  border: 5px solid #eee;
+}
+
+.rframe {
+  overflow: auto;
+  background-color: white;
+  min-width: 40rem;
+  height:40rem;
+}
+
+.low{
+  display: flex;
+  flex-direction: row;
+  width: 70rem;
+  justify-content: space-around;
+  padding-bottom: 1.5rem;
+}
+
+.guide{
+  display: flex;
+  flex-direction: row;
+  width: 80rem;
+  padding-bottom: 1.5rem;
+  mix-blend-mode: normal !important;
+}
+
+.hifi{
+  display: flex;
+  flex-direction: row;
+  width: 80rem;
+  padding-top: 3rem;
+  margin-left:-3rem
+}
+
+.hifi img{
+  max-height:80rem;
+  width: auto;
+  height: auto;
+  padding-right: 2rem;;
+}
+
+
+.ipad{
+  margin-left: -11.5rem;
+}
+
+.ipad img{
+  max-width: 25rem;
+}
+
+.phone{
+  min-width: 35rem;
+}
+
+.phone img{
+  margin-left: -1.2rem;
+}
+
+.desktop{
+  min-width: 35rem;
+}
+
+.guide img{
+  /* max-width: 20rem; 
+  max-height: 20rem; */
+  min-width:40rem;
+  max-height:60rem;
+  width: auto;
+  height: auto;
+  margin-left: -2rem;
+}
+
+ .palette{
+  margin-left: -2rem;
+  max-width: 40rem;
+}
+
+.comp{
+  max-width:60rem;
+  max-height: 20rem;
+  width: auto;
+  height: auto;
+  margin-top: -0.5rem;
+}
+
+.comp2{
+  max-width:45rem;
+  max-height: 15rem;
+  width: auto;
+  height: auto;
+}
+
+.low img{
+  display: block;
+  max-width:40rem;
+  max-height:30rem;
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
 
 .w20{
   width: 200px;
@@ -73,4 +228,19 @@
 
 .trans{
   mix-blend-mode: multiply;
+}
+
+.bs img{
+  width: 29%;
+  height: auto;
+  margin-right: 2.5rem;
+  margin-bottom:  2.5rem;
+}
+
+.bs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  justify-content: center;
 }
