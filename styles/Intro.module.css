@@ -23,6 +23,10 @@
     width: 70rem;
   }
 
+  .small{
+    margin: 0 auto;
+  }
+
   .text{
     width: 800px;
     display: flex;
